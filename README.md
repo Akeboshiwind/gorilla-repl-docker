@@ -16,12 +16,6 @@ docker run -d
            akeboshiwind/gorilla-repl
 ```
 
-or use:
-
-```bash
-docker-compose up
-```
-
 This will:
 - Start the gorilla repl at http://localhost:3000/worksheet.html
 - Start an nREPL at localhost:7000
