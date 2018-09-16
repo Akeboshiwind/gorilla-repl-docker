@@ -1,6 +1,6 @@
 # Gorilla REPL
 
-A docker file for gorilla repl
+A docker image to run gorilla repl.
 
 ## Running
 
