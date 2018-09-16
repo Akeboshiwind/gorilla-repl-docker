@@ -38,19 +38,12 @@ services:
     image: akeboshiwind/gorilla-repl:boot
     container_name: gorilla-repl
     restart: always
-    networks:
-      - proxy
+    ports:
+      - 3000:3000
     volumes:
       - ./ws/:/usr/src/app/ws/
       - ./data/:/usr/src/app/data/
-
-networks:
-  proxy:
-    external: true
-    name: reverse-proxy
 ```
-
-Where the `proxy` network is the network used by my reverse proxy.
 
 ## Loading dependancies at runtime
 
